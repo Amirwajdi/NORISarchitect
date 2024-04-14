@@ -1,0 +1,33 @@
+﻿
+@model NORISarchitect.UI.Projects.ProjectDto
+@{
+}
+
+@if (Model is not null)
+{
+    <div class="mt-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly />
+    </div>
+    <div class="mt-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name" readonly />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Client</label>
+        <input type="text" class="form-control" asp-for="Client" readonly />
+    </div>
+
+    <div class="mt-3">
+        <label class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description" readonly />
+    </div>
+
+    <div class="mt-3">
+        <a class="btn btn-primary"
+        asp-controller="Projects" asp-action="Index">
+            Back
+        </a>        
+    </div>
+}
